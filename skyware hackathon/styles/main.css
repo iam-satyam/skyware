@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,400;1,400&display=swap');
+*{font-family: 'Nunito Sans', sans-serif;}
+
+/*frontimage css*/
+main div #frontimg {
+	width: 100vw;
+}
+main div img {
+	/*width: 80rem;*/
+	width: 99vw;
+}
+
+/*tagline css*/
+#tagline {
+	color: #00AD8A;
+	text-align: center;
+}
+div #tag {
+	margin: 4% auto 1% auto;
+	font-size: 3rem;
+}
+div #line {
+	margin: auto 20%;
+	color: black;
+	word-wrap: break-all;
+	font-size: 1.75rem;
+}
+
+/*about us section css*/
+#about
+{
+	text-align: center;
+}
+#about div h3 {
+	margin: 5% auto;
+	font-size: 2.75rem;
+	font-weight: bold;
+}
+#forflex {
+	display:flex;
+	justify-content: space-around;
+	/*flex-wrap: wrap; in media query*/
+	align-items: flex-start;
+}
+#video {
+	text-align: center;
+}
+#video iframe {
+	width: 45vmax;
+	height: 20vmax;
+	border-color: #00AD8A;
+	border-width: 0.5rem;
+	border-radius: 1.5rem;
+	margin: auto 4%;
+}
+#abouttext {
+	margin: auto 5%;
+	text-align: center;
+	/*font-size: 1.5rem;*/
+	font-size: 3.5vmin;
+}
+
+
+/*for section containing OUR PRODUCT*/
+#product {
+	margin-top: 4rem;/*just for space*/
+	padding-bottom: 4rem;/*just for space*/
+	background-color: #00AD8A;
+	color : white;
+}
+#ourproduct {
+	text-align: center;
+	margin: 3rem auto;
+}
+#ourproduct h3 {
+	padding-top: 3rem;
+	font-size: 3rem;
+	font-weight: bold;
+	letter-spacing: 0.5rem;
+}
+
+#flexpro {
+	display: flex;
+	justify-content: space-around;
+}
+#producttext {
+	text-align: center;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	letter-spacing: 0.15rem;
+	margin: auto 10%;
+}
+#productimg {
+	text-align: center;
+	margin: auto 10% auto 5%;
+}
+#productimg img {
+	width: 125%;
+}
+
+
+/*Why do you need us part css*/
+#whyneed {
+	background-color: white;
+}
+#why {
+	color: #00AD8A;
+	text-align: center;
+}
+div #whytext {
+	margin: 4% auto 1% auto;
+	font-size: 2.75rem;
+}
+div #whysubtext {
+	margin: auto 20%;
+	color: black;
+	word-wrap: break-all;
+	font-size: 1.5rem;
+	font-style: bold;
+}
+
+.moreflex {
+	margin: 2rem auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.cards {
+	text-align: center;
+	background-color: #D9D9D9;
+	margin: 0.45rem 0.65rem;
+	max-width: 25rem;
+}
+.rtextone {
+	margin: 4% auto;
+	font-size: 1.75rem;
+	color: #00AD8A;
+}
+.rtexttwo {
+	margin: auto 10%;
+	margin-bottom: 13%;
+	word-wrap: break-all;
+	color: black;
+	font-size: 1.5rem;
+	font-weight: normal;
+}
+.logosvg {
+	margin: 1rem auto;
+}
+
+
+/*for smaller screen*/
+@media (max-width: 920px) and (min-height: 600px){
+		div #tag {
+			margin: 4% auto 1% auto;
+			font-size: 5vmin;
+		}	
+		div #line {
+			margin: auto 20%;
+			color: black;
+			word-wrap: break-all;
+			font-size: 2.75vmin;
+		}
+
+		#about div h3 {
+			margin: 3% auto;
+			font-size: 5vmin;
+			font-weight: bold;
+		}
+
+		#forflex {
+			flex-wrap: wrap;
+		}
+		#video iframe {
+			border-width: 1vmin;
+			border-radius: 2vmin;
+			margin: 4vmin auto;
+		}
+		#abouttext {
+			margin: auto 5vmin;
+			text-align: center;
+			font-size: 4vmin;
+		}
+
+
+		#flexpro {
+			flex-wrap: wrap;
+		}
+		#ourproduct {
+			font-size: 4vmin;
+		}
+		#producttext {
+			text-align: center;
+			font-size: 4vmin;
+			/*line-height: 2rem;*/
+			/*letter-spacing: 0.15rem;*/
+			margin: auto 10%;
+		}
+		#productimg {
+			margin: auto 7% auto 4%;
+		}
+		#productimg img {
+			width: 50%;
+		}
+
+		div #whytext {
+			margin: 4% auto 1% auto;
+			font-size: 6vmin;
+		}
+		div #whysubtext {
+			margin: auto 20%;
+			font-size: 4.5vmin;
+		}
+
+}
